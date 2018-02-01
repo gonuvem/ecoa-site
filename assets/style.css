@@ -1,0 +1,215 @@
+body{
+  background-color: #d9e1f6;
+  margin: 0;
+}
+
+header{
+  width: 100%;
+  height: 64px;
+  background-color: rgba(255,255,255,0.1);
+  position: fixed;
+}
+
+#intro{
+  height: 100vh;
+  background-image: url("imgs/bg.png");
+  background-color: lightseagreen;
+  background-size: cover;
+  background-position: center center;
+}
+
+.title_container{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#evento .title_container{
+  background-image: url("imgs/evento.png");
+  padding-bottom: 42%;
+  background-color: #d9e1f6;
+  position: relative;
+}
+/*
+#evento .title_container > div {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+}
+*/
+#evento .title_content{
+  padding-top: 10%;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+#evento .title{
+  font-size: 3em;
+  float: left;
+}
+
+#evento .desc{
+  font-size: 1.4em;
+  float: right;
+  width: 50%;
+}
+
+#evento .title::after{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 10px;
+  background-color: white;
+}
+
+#palestrantes .title_container{
+  background-image: url("imgs/palestrantes.png");
+  padding-bottom: 27%;
+  background-color: #d9e1f6;
+  position: relative;
+}
+
+.title_container > div {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+}
+
+.title_content{
+  padding-top: 10%;
+  width: 80%;
+  margin: auto;
+  color: white;
+  
+}
+
+.title{
+  font-size: 3em;
+  float: left;
+}
+
+.title::after{
+  content: '';
+  width: 100px;
+  height: 10px;
+  background-color: white;
+  display: block;
+}
+
+#palestrantes .container{
+  width: 90%;
+  margin: auto;
+}
+
+#palestrantes .people_container{
+  max-height: 500px;
+  width: 30%;
+  float: left;
+  background-color: transparent;
+  margin: 1.6666%;
+}
+
+#palestrantes .people_photo{
+  width: 80%;
+  margin: auto;
+  border-radius: 50%;
+  padding-bottom: 80%;
+  background-color: #0e2847;
+}
+
+#palestrantes .people_desc::before{
+  content: '';
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  height: 10px;
+  background-color: #223d6a;
+}
+
+#palestrantes::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  clear: both;
+  display: block;
+}
+
+#programacao .title_container{
+  background-image: url("imgs/programacao.png");
+  padding-bottom: 47%;
+  position: relative;
+}
+
+#programacao .title_content{
+  padding-top: 30%;
+}
+
+#programacao .container{
+  width: 80%;
+  height: 200px;
+  padding-bottom: 50px;
+  background-color: lightgray;
+  margin: auto;
+}
+
+#apoiadores .title_container{
+  background-image: url("imgs/apoiadores.png");
+  padding-bottom: 25%;
+  position: relative;
+}
+
+#apoiadores .title_content{
+  padding-top: 8%;
+}
+
+#apoiadores .container{
+  width: 80%;
+  margin: auto;
+}
+
+#apoiadores .supporters{
+  width: 20%;
+  padding-bottom: 20%;
+  border-radius: 50%;
+  background-color: #0e1e3e;
+  float: left;
+  margin: auto 6.66%;
+}
+
+#apoiadores::after{
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1px;
+  content: '';
+  padding-top: 50px;
+}
+
+#contatos .title_container{
+  background-image: url("imgs/contatos.png");
+  padding-bottom: 41%;
+  position: relative;
+}
+
+#contatos .content{
+  width: 80%;
+  clear:both;
+  margin:auto;
+   padding-top: 5%;
+}
+
+#contatos .social_network{
+  width: 15%;
+  padding-bottom: 15%;
+  margin: auto 2.5%;
+  background-color: white;
+  float: left;
+  border-radius: 50%;
+}
+
+footer{
+  width: 100%;
+  height: 20px;
+  background-color: orange;
+  position: relative;
+  text-align: center;
+}
