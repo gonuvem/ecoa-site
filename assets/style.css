@@ -1,3 +1,13 @@
+@font-face{
+  font-family: Monda;
+  src: url("fonts/Monda-Regular.ttf");
+}
+
+@font-face{
+  font-family: Dosis;
+  src: url("fonts/Dosis-Regular.ttf");
+}
+
 body{
   background-color: #d9e1f6;
   margin: 0;
@@ -13,7 +23,7 @@ header{
 #intro{
   height: 100vh;
   background-image: url("imgs/bg.png");
-  background-color: lightseagreen;
+  /*! background-color: lightseagreen; */
   background-size: cover;
   background-position: center center;
 }
@@ -26,7 +36,7 @@ header{
 
 #evento .title_container{
   background-image: url("imgs/evento.png");
-  padding-bottom: 42%;
+  padding-bottom: 41%;
   background-color: #d9e1f6;
   position: relative;
 }
@@ -37,23 +47,20 @@ header{
 }
 */
 #evento .title_content{
-  padding-top: 10%;
+  padding-top: 5%;
   width: 80%;
   margin: auto;
   color: white;
 }
 
-#evento .title{
-  font-size: 3em;
-  float: left;
-}
 
 #evento .desc{
-  font-size: 1.4em;
+  font-size: 2em;
   float: right;
   width: 50%;
 }
 
+/*
 #evento .title::after{
   content: '';
   display: block;
@@ -61,10 +68,11 @@ header{
   height: 10px;
   background-color: white;
 }
+*/
 
 #palestrantes .title_container{
   background-image: url("imgs/palestrantes.png");
-  padding-bottom: 27%;
+  padding-bottom: 32.7%;
   background-color: #d9e1f6;
   position: relative;
 }
@@ -75,24 +83,26 @@ header{
 }
 
 .title_content{
-  padding-top: 10%;
+  padding-top: 8%;
   width: 80%;
   margin: auto;
   color: white;
-  
+  font-family: Dosis;
 }
 
 .title{
-  font-size: 3em;
+  font-size: 3.7em;
   float: left;
+  font-family: Monda;
 }
 
 .title::after{
   content: '';
-  width: 100px;
-  height: 10px;
+  width: 60px;
+  height: 3px;
   background-color: white;
   display: block;
+  border-radius: 10px;
 }
 
 #palestrantes .container{
@@ -106,6 +116,7 @@ header{
   float: left;
   background-color: transparent;
   margin: 1.6666%;
+  font-family: Dosis;
 }
 
 #palestrantes .people_photo{
@@ -119,10 +130,11 @@ header{
 #palestrantes .people_desc::before{
   content: '';
   display: block;
-  width: 50%;
+  width: 30%;
   margin: 20px auto;
-  height: 10px;
+  height: 7px;
   background-color: #223d6a;
+  border-radius: 20px;
 }
 
 #palestrantes::after{
@@ -140,7 +152,7 @@ header{
 }
 
 #programacao .title_content{
-  padding-top: 30%;
+  padding-top: 28%;
 }
 
 #programacao .container{
@@ -153,7 +165,7 @@ header{
 
 #apoiadores .title_container{
   background-image: url("imgs/apoiadores.png");
-  padding-bottom: 25%;
+  padding-bottom: 27.2%;
   position: relative;
 }
 
@@ -213,3 +225,262 @@ footer{
   position: relative;
   text-align: center;
 }
+
+
+@media screen and (min-width:1200px) and (max-width: 1300px){
+  #evento .desc{
+    font-size: 1.5;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width: 479px){
+  #evento .title_container{
+    position: relative;
+  }
+  .title{
+    display: inline-block;
+    float: none;
+    font-size: 2em;
+  }
+  #evento .desc {
+    padding-top: 2em;
+    float: none;
+    width: 100%;
+    font-size: 1em;
+  }
+  #evento .title_content{
+    position: relative;
+  }
+  
+  #evento .title_content > div{
+    position: relative;
+  }
+  
+  /*! Palestrantes */
+  
+  #palestrantes .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #palestrantes .title_content{
+    position: relative;
+    padding-top: 18%;
+    padding-bottom: 26%;
+  }
+  
+  #palestrantes .people_container{
+    float: none;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+  
+  /*! Programação */
+  #programacao .title_container{
+    position: relative;
+    /*! padding-top: 37%; */
+    padding-bottom: 0;
+  }  
+  #programacao .title_content{
+    position: relative;
+    padding-top: 25%;
+    /*! top: -40px; */
+    padding-bottom: 10%;
+  }
+  #programacao .title{
+    position: relative;
+    
+  }
+  
+  /*! Apoiadores */
+  #apoiadores .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #apoiadores .title_content{
+    position: relative;
+    /*! top: 35%; */
+    padding-top: 12%;
+    padding-bottom: 21%;
+  }
+  
+  #apoiadores .supporters{
+    width: 25%;
+    padding-bottom: 25%;
+    margin: auto 4.16666%;
+  }
+  
+  #apoiadores .container{
+    width: 90%;
+  }
+}
+
+
+
+@media screen and (min-width:480px) and (max-width: 719px){
+  #evento .title_container{
+    position: relative;
+  }
+  .title{
+    display: inline-block;
+    float: none;
+    font-size: 3.2em;
+  }
+  #evento .desc {
+    padding-top: 2em;
+    float: none;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #evento .title_content{
+    position: relative;
+  }
+  
+  #evento .title_content > div{
+    position: relative;
+  }
+  
+  /*! Palestrantes */
+  
+  #palestrantes .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #palestrantes .title_content{
+    position: relative;
+    padding-top: 18%;
+    padding-bottom: 26%;
+  }
+  
+  #palestrantes .people_container{
+    float: left;
+    width: 44%;
+    margin: auto 3%;
+    padding-bottom: 40px;
+    font-family: Dosis;
+  }
+  
+  /*! Programação */
+  #programacao .title_container{
+    position: relative;
+    /*! padding-top: 37%; */
+    padding-bottom: 0;
+  }  
+  #programacao .title_content{
+    position: relative;
+    padding-top: 25%;
+    /*! top: -40px; */
+    padding-bottom: 10%;
+  }
+  #programacao .title{
+    position: relative;
+    
+  }
+  
+  /*! Apoiadores */
+  #apoiadores .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #apoiadores .title_content{
+    position: relative;
+    /*! top: 35%; */
+    padding-top: 12%;
+    padding-bottom: 21%;
+  }
+  
+  #apoiadores .supporters{
+    width: 25%;
+    padding-bottom: 25%;
+    margin: auto 4.16666%;
+  }
+  
+  #apoiadores .container{
+    width: 90%;
+  }
+}
+
+
+@media screen and (min-width:720px) and (max-width: 1199px){
+  #evento .title_container{
+    position: relative;
+  }
+  .title{
+    display: inline-block;
+    float: none;
+    font-size: 3.2em;
+  }
+  #evento .desc {
+    padding-top: 2em;
+    float: none;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #evento .title_content{
+    position: relative;
+  }
+  
+  #evento .title_content > div{
+    position: relative;
+  }
+  
+  /*! Palestrantes */
+  
+  #palestrantes .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #palestrantes .title_content{
+    position: relative;
+    padding-top: 18%;
+    padding-bottom: 26%;
+  }
+  
+  #palestrantes .people_container{
+    float: left;
+    width: 44%;
+    margin: auto 3%;
+    padding-bottom: 40px;
+    font-family: Dosis;
+  }
+  
+  /*! Programação */
+  #programacao .title_container{
+    position: relative;
+    /*! padding-top: 37%; */
+    padding-bottom: 0;
+  }  
+  #programacao .title_content{
+    position: relative;
+    padding-top: 25%;
+    /*! top: -40px; */
+    padding-bottom: 10%;
+  }
+  #programacao .title{
+    position: relative;
+    
+  }
+  
+  /*! Apoiadores */
+  #apoiadores .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #apoiadores .title_content{
+    position: relative;
+    /*! top: 35%; */
+    padding-top: 12%;
+    padding-bottom: 21%;
+  }
+  
+  #apoiadores .supporters{
+    width: 25%;
+    padding-bottom: 25%;
+    margin: auto 4.16666%;
+  }
+  
+  #apoiadores .container{
+    width: 90%;
+  }
+}
+
