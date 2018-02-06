@@ -39,7 +39,28 @@
 
 <body>
 <header>
-    <nav></nav>
+    <div id="menu-content">
+        <div id="head">
+            <img src="assets/imgs/logo.png">
+        </div>
+        <div id="menu-square">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div id="menu-options" class="show-menu">
+            <nav>
+                <ul>
+                    <a href="#evento"><li>Evento</li></a><span>•</span>
+                    <a href="#palestrantes"><li>Palestrantes</li></a><span>•</span>
+                    <a href="#programacao"><li>Programação</li></a><span>•</span>
+                    <a href="#apoiadores"><li>Apoiadores</li></a><span>•</span>
+                    <a href="#contatos"><li>Contatos</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
 </header>
 <div id="wrapper">
     <section id="intro"></section>
@@ -189,4 +210,21 @@
 </div>
 <footer> FACTOS 2018 </footer>
 </body>
+<script src="assets/navigation.js"></script>
+<script>
+    var menu = document.getElementById("menu-square");
+    var nav = document.getElementsByTagName("nav")[0];
+    function expand(){
+        console.log(nav.style.maxHeight)
+        if(nav.style.maxHeight !== "200px"){
+            nav.style.maxHeight = "200px";
+            menu.classList.add('expand');
+        }else {
+            nav.style.maxHeight = "0px";
+            menu.classList.remove('expand');
+        }
+    }
+    menu.onclick = function(){ console.log("menu"); expand(); }
+    nav.onclick = function(){ console.log("hey"); expand();}
+</script>
 </html>
