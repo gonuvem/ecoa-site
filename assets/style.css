@@ -142,7 +142,7 @@ nav{
 }
 
 .title_content{
-  padding-top: 6%;
+  padding-top: 4%;
   width: 80%;
   margin: auto;
   color: white;
@@ -184,8 +184,8 @@ nav{
 }
 
 #palestrantes .title_container{
-  background-image: url("imgs/palestrantes2.png");
-  padding-bottom: 32.7%;
+  background-image: url("imgs/palestrantes3.png");
+  padding-bottom: 25%;
   background-color: #d9e1f6;
 }
 
@@ -231,12 +231,12 @@ nav{
 }
 
 #programacao .title_container{
-  background-image: url("imgs/programacao2.png");
-  padding-bottom: 36.12%;
+  background-image: url("imgs/programacao4.png");
+  padding-bottom: 35.02%;
 }
 
 #programacao .title_content{
-  padding-top: 18%;
+  padding-top: 15%;
 }
 
 #programacao .container{
