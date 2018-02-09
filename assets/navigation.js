@@ -72,6 +72,19 @@ for(var i = 0; i < navItems.length; i++){
     };
 }
 
+var bgdark = false;
+window.addEventListener('scroll', function(){
+        var offh = document.getElementById("intro").offsetHeight;
+        var mn = document.getElementById("menu-content");
+        if(offh/2 < window.scrollY && !bgdark){
+            bgdark = true;
+            mn.classList.add('bgdark');
+        }
+        if(offh > window.scrollY){
+            bgdark = false;
+            mn.classList.remove('bgdark');
+        }
+    }, true);
 
 /*
 
