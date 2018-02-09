@@ -142,7 +142,7 @@ nav{
 }
 
 .title_content{
-  padding-top: 4%;
+  padding-top: 6%;
   width: 80%;
   margin: auto;
   color: white;
@@ -156,7 +156,7 @@ nav{
 }
 
 .title{
-  font-size: 6em;
+  font-size: 4em;
   float: left;
   font-family: Monda;
 }
@@ -232,11 +232,11 @@ nav{
 
 #programacao .title_container{
   background-image: url("imgs/programacao4.png");
-  padding-bottom: 35.02%;
+  padding-bottom: 24.27%;
 }
 
 #programacao .title_content{
-  padding-top: 15%;
+  padding-top: 7%;
 }
 
 #programacao .container{
@@ -249,7 +249,7 @@ nav{
 
 #apoiadores .title_container{
   background-image: url("imgs/apoiadores2.png");
-  padding-bottom: 28.86%;
+  padding-bottom: 23.5%;
 }
 
 #apoiadores .title_content{
@@ -281,7 +281,7 @@ nav{
 
 #contatos .title_container{
   background-image: url("imgs/contatos2.png");
-  padding-bottom: 41%;
+  padding-bottom: 38.5031%;
   position: relative;
 }
 
@@ -289,44 +289,68 @@ nav{
   width: 80%;
   clear:both;
   margin:auto;
-   padding-top: 9%;
+  padding-top: 9%;
 }
 
-#contatos .social_network{
-  width: 10%;
-  padding-bottom: 10%;
-  margin: auto 11%;
+#contatos .social_network .logo{
+  width: 50%;
+  padding-bottom: 50%;
+  margin: auto 25%;
   float: left;
   border-radius: 50%;
   overflow: hidden;
   background-size: contain;
+  display: inline;
 }
 
-#contatos .social_network:nth-child(1){
+#contatos .instagram .logo{
   background-image: url("imgs/inst.png");
 }
 
-#contatos .social_network:nth-child(1):hover{
+#contatos .instagram .logo:hover{
   background-image: url("imgs/inst2.png");
   cursor: pointer;
 }
 
-#contatos .social_network:nth-child(2){
+#contatos .fb .logo{
   background-image: url("imgs/fb.png");
 }
 
-#contatos .social_network:nth-child(2):hover{
+#contatos .fb .logo:hover{
   background-image: url("imgs/fb2.png");
   cursor: pointer;
 }
 
-#contatos .social_network:nth-child(3){
+#contatos .twitter .logo{
   background-image: url("imgs/tt.png");
 }
 
-#contatos .social_network:nth-child(3):hover{
+#contatos .twitter .logo:hover{
   background-image: url("imgs/tt2.png");
   cursor: pointer;
+}
+
+ 
+#contatos .social_network{
+  width: 30%;
+  padding-bottom: 4%;
+  position: relative;
+  text-align: center;
+  float:left;
+  margin: auto 1.6667%;
+}
+#contatos .social_network .link{
+  position: relative;
+  float: left;
+  color:  white;
+  font-family: Dosis;
+  font-size: 1.1em;
+  height: 15%;
+  vertical-align: middle;
+  display: inline;
+  clear: both;
+  width: 100%;
+  margin-top: 5px;
 }
 
 #by{
@@ -341,8 +365,9 @@ nav{
   color: white;
   font-family: Monda;
   padding: 5px 0;
-  font-size: 0.8em;
+  font-size: 0.75em;
 }
+
 
 /*! EVENTO:: Texto*/
 @media screen and (min-width:1200px) and (max-width: 1300px){
@@ -353,21 +378,7 @@ nav{
     padding-top: 4%;
   }
 }
-/*
-@media screen and (min-width:401px) and (max-width: 525px){
-  #ecoa{
-    top: 82%;
-    font-size: 1.8;
-  }
-}
 
-@media screen and (min-width:0px) and (max-width: 400px){
-  #ecoa{
-    top: 76%;
-    font-size: 1.8;
-  }
-}
-*/
 
 /*! -=-=-==-=-=-=  MENU =-=-=-=-=--=-==-=-=  */
 @media screen and (min-width:200px) and (max-width: 719px){
@@ -464,7 +475,38 @@ nav{
   
   #contatos .content{
     padding-top: 5%;
+    position: relative;
   }
+  
+  #contatos .social_network .link{
+    display: none;
+  }
+  
+  
+  #contatos .social_network{
+    width: 30%;
+    float: left;
+    position: relative;
+    text-align: center;
+    margin: auto 1.6667%;
+  }
+  #contatos .social_network .logo{
+    width: 60%;
+    padding-bottom: 60%;
+  }
+  /*
+  #contatos .social_network .link{
+    position: relative;
+    float: left;
+    color:  white;
+    font-family: Dosis;
+    font-size: 1.1em;
+    height: 15%;
+    vertical-align: middle;
+    display: inline;
+  }
+  */
+   
 }
 
 @media screen and (min-width:200px) and (max-width: 479px){
@@ -497,7 +539,7 @@ nav{
     margin: auto;
     padding-bottom: 40px;
   }
-  
+    
 }
 
 
@@ -528,6 +570,9 @@ nav{
     padding-bottom: 40px;
     font-family: Dosis;
   }
+  #contatos .social_network .link{
+    font-size: 2em;
+  }
     
 }
 
@@ -535,7 +580,7 @@ nav{
 @media screen and (min-width:720px) and (max-width: 1199px){
   
   .title{
-    font-size: 5.5em;
+    font-size: 3.5em;
   }
   #evento .desc {
     font-size: 2em;
@@ -547,14 +592,14 @@ nav{
   
   /*! Palestrantes */
   #palestrantes .title_content{
-    padding-top: 8%;
-    padding-bottom: 15%;
+    padding-top: 7%;
+    padding-bottom: 11%;
   }
   
   #palestrantes .people_container{
     float: left;
-    width: 44%;
-    margin: auto 3%;
+    width: 36%;
+    margin: auto 7%;
     padding-bottom: 40px;
     font-family: Dosis;
   }
@@ -611,8 +656,8 @@ nav{
   
   #programacao .title_content{
     position: relative;
-    padding-top: 25%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 7%;
   }
   
   #programacao .title{
@@ -630,8 +675,8 @@ nav{
   #apoiadores .title_content{
     position: relative;
     /*! top: 35%; */
-    padding-top: 12%;
-    padding-bottom: 21%;
+    padding-top: 5%;
+    padding-bottom: 13%;
   }
     
   #apoiadores .supporters{
@@ -639,5 +684,15 @@ nav{
     padding-bottom: 25%;
     margin: auto 4.16666%;
   }
+  
+  
+  #contatos .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #contatos .title_container > div{
+    position: relative;
+    padding-bottom: 0;
+  }  
 }
 
