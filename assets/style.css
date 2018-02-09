@@ -29,7 +29,7 @@ header{
 }
 
 #ecoa{
-  display: inline-block;
+  display: table;
   font-family: Monda;
   font-size: 4em;
   top: 0%;
@@ -41,20 +41,15 @@ header{
   color: white;
   position: absolute;
   vertical-align: middle;
-}
-
-#ecoa::after{
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+  line-height: 120%;
 }
 
 .txt-ecoa{
-  display: inline-block;
-  position: relative;
+  display: table-cell;
   vertical-align: middle;
 }
+
+
 .bgdark{
   background-color: #07091A;
   transition: background-color 1s;
@@ -475,7 +470,7 @@ nav{
 @media screen and (min-width:200px) and (max-width: 479px){
   
   #ecoa{
-    font-size: 3em;
+    font-size: 2em;
   }
   
   .title{
@@ -484,6 +479,9 @@ nav{
   
   #evento .desc {
     font-size: 1.2em;
+  }
+  #evento .title_content{
+    padding-bottom: 20%;
   }
 
   
