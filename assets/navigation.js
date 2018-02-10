@@ -4,7 +4,8 @@ Math.trunc = Math.trunc || function(x) {
 
 var sectionItems = document.getElementsByTagName('section');
 var navItems = document.querySelectorAll('nav a');
-console.log(navItems);
+
+console.log(sectionItems)
 
 var mapSectionNav = new Map();
 for(var i = 0; i < navItems.length; i++){
@@ -84,33 +85,35 @@ window.addEventListener('scroll', function(){
             bgdark = false;
             mn.classList.remove('bgdark');
         }
+
+        // -=-=-=- Interative MArker section -=-=-=-=-=
+        var len = sectionItems.length;
+        var winScroll = window.scrollY;
+        for(var i = 0; i < len; i++){
+            var elem = document.getElementById(sectionItems[i].id);
+            var off = elem.offsetTop;
+            var diff = off - mn.offsetHeight-100;
+    
+            if( ( Math.trunc(diff > 0?diff:0) <= winScroll ) && 
+                ( winScroll < Math.trunc(diff + elem.offsetHeight + 1)) ){
+                selectedNavItem(mapSectionNav.get('#'+sectionItems[i].id));
+                break;
+            }
+        }
     }, true);
 
-/*
 
-$('nav #menu .nav-item a').click(function(e){
-    var id = this.getAttribute("href");
-    goToSection(id);
-});
+
 
 function selectedNavItem(elem){
-    $('.selectedNavItem').removeClass('selectedNavItem');
-    $(elem).addClass('selectedNavItem');
+    console.log(elem);
+    var sni = document.querySelector('.selectedNavItem')
+    if(sni) sni.classList.remove('selectedNavItem');
+    elem.classList.add('selectedNavItem');
 }
+/*
 window.onscroll = function(e){
     
-    var len = sectionItems.length;
-    var winScroll = window.scrollY;
-    for(var i = 0; i < len; i++){
-        var elem = $(sectionItems[i]);
-        var off = elem.offset().top;
-        var diff = off - $('nav #head').height();
-
-        if( ( Math.trunc(diff > 0?diff:0) <= winScroll ) && 
-            ( winScroll < Math.trunc(diff + elem.height() + 1)) ){
-            selectedNavItem(mapSectionNav.get('#'+sectionItems[i].id));
-            break;
-        }
-    }
+    
 }
 */

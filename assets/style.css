@@ -106,6 +106,13 @@ nav{
   padding-right: 10%;
 }
 
+
+.selectedNavItem{
+  color: #93C4FF;
+  font-weight: bolder;
+}
+
+
 #canvas {
   display: block;
   width: 100%;
@@ -184,7 +191,7 @@ nav{
 }
 
 #palestrantes .title_container{
-  background-image: url("imgs/palestrantes3.png");
+  background-image: url("imgs/palestrantes1.png");
   padding-bottom: 25%;
   background-color: #d9e1f6;
 }
@@ -202,13 +209,14 @@ nav{
   background-color: transparent;
   margin: 1.6666%;
   font-family: Dosis;
+  font-size: 1.1em;
 }
 
 #palestrantes .people_photo{
-  width: 80%;
+  width: 50%;
   margin: auto;
   border-radius: 50%;
-  padding-bottom: 80%;
+  padding-bottom: 50%;
   background-color: #0e2847;
 }
 
@@ -231,24 +239,24 @@ nav{
 }
 
 #programacao .title_container{
-  background-image: url("imgs/programacao4.png");
+  background-image: url("imgs/programacao1.png");
   padding-bottom: 24.27%;
 }
 
 #programacao .title_content{
-  padding-top: 7%;
+  padding-top: 9%;
 }
 
 #programacao .container{
   width: 80%;
   height: 200px;
   padding-bottom: 50px;
-  background-color: lightgray;
+  background-color: transparent;
   margin: auto;
 }
 
 #apoiadores .title_container{
-  background-image: url("imgs/apoiadores2.png");
+  background-image: url("imgs/apoiadores1.png");
   padding-bottom: 23.5%;
 }
 
@@ -293,8 +301,8 @@ nav{
 }
 
 #contatos .social_network .logo{
-  width: 50%;
-  padding-bottom: 50%;
+  width: 44%;
+  padding-bottom: 44%;
   margin: auto 25%;
   float: left;
   border-radius: 50%;
