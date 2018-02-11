@@ -144,7 +144,7 @@ window.requestAnimFrame = (function() {
                     count--;
                     thr = waves_group[0].radius + gen_r();
                     if(count % 2 != 0) color = "#093166";
-                    console.log(count)
+                    //console.log(count)
                     wave_elem = new Wave(30, color);
                     color = null;   
                     waves_group.push(wave_elem);
