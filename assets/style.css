@@ -190,6 +190,35 @@ nav{
   width: 50%;
 }
 
+/*! --------------ANIMATION-------------------- */
+@-webkit-keyframes opa {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes opa {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes opa {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes opa {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+.opa{
+  animation: opa 1s ease-in-out;
+  -webkit-animation: opa 1s ease-in-out; 
+  -moz-animation:    opa 1s ease-in-out; 
+  -o-animation:      opa 1s ease-in-out; 
+}
+
+.sumir{
+  opacity: 0;
+}
+/*---------------------------------------------*/
+
 #palestrantes .title_container{
   background-image: url("imgs/palestrantes1.png");
   padding-bottom: 25%;

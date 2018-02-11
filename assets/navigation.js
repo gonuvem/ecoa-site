@@ -5,14 +5,15 @@ Math.trunc = Math.trunc || function(x) {
 var sectionItems = document.getElementsByTagName('section');
 var navItems = document.querySelectorAll('nav a');
 
-console.log(sectionItems)
-
 var mapSectionNav = new Map();
 for(var i = 0; i < navItems.length; i++){
     var href = navItems[i].hash;
     mapSectionNav.set(href, navItems[i]);
 }
-console.log(mapSectionNav);
+
+for(var i = 1; i < sectionItems.length; i++){
+    sectionItems[i].classList.add('sumir');
+}
 
 // ################## ANIMATIONFRAME ######################
 window.animationFrame = (function () {
@@ -89,15 +90,21 @@ window.addEventListener('scroll', function(){
         // -=-=-=- Interative MArker section -=-=-=-=-=
         var len = sectionItems.length;
         var winScroll = window.scrollY;
+        var canAttrib = false;
         for(var i = 0; i < len; i++){
+            if(!i) canAttrib = true;
             var elem = document.getElementById(sectionItems[i].id);
             var off = elem.offsetTop;
             var diff = off - mn.offsetHeight-100;
     
-            if( ( Math.trunc(diff > 0?diff:0) <= winScroll ) && 
-                ( winScroll < Math.trunc(diff + elem.offsetHeight + 1)) ){
+            if( canAttrib && ( Math.trunc(diff > 0?diff:0) <= winScroll ) && 
+                ( winScroll < Math.trunc(diff + elem.offsetHeight + 1))){
                 selectedNavItem(mapSectionNav.get('#'+sectionItems[i].id));
-                break;
+                canAttrib = !canAttrib;
+                //break;
+            }
+            if(i > 0 && winScroll + window.innerHeight - off >= 114){
+                revealSection(sectionItems[i].id);
             }
         }
     }, true);
@@ -106,14 +113,17 @@ window.addEventListener('scroll', function(){
 
 
 function selectedNavItem(elem){
-    console.log(elem);
     var sni = document.querySelector('.selectedNavItem')
+    if(sni == elem) return;
     if(sni) sni.classList.remove('selectedNavItem');
-    elem.classList.add('selectedNavItem');
+    if(elem) elem.classList.add('selectedNavItem');
 }
-/*
-window.onscroll = function(e){
-    
-    
+
+function revealSection(elemName){
+
+    var section = document.querySelector('#'+elemName);
+    if(!section.classList.contains('opa')){
+        section.classList.add('opa');
+    }
+    section.classList.remove('sumir');
 }
-*/
