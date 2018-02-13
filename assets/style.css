@@ -600,9 +600,9 @@ nav{
   
   #apoiadores .supporters{
     width: 80%;
-    left: 10%;
+    /*! left: 10%; */
     position: relative;
-    margin: 0;
+    margin: 0px 10%;
     margin-bottom: 10%;
   }
   #apoiadores .sup{
