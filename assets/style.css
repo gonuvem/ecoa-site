@@ -300,9 +300,7 @@ nav{
 
 #apoiadores .supporters{
   width: 20%;
-  padding-bottom: 20%;
-  border-radius: 50%;
-  background-color: #0e1e3e;
+  /*! background-color: #0e1e3e; */
   float: left;
   margin: auto 6.66%;
 }
@@ -314,6 +312,28 @@ nav{
   height: 1px;
   content: '';
   padding-top: 50px;
+}
+
+#apoiadores .sup{
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background-size: contain;
+  
+  background-color: #0e1e3e;
+  box-shadow: 0px 0px 4px 4px #dadada;
+}
+#apoiadores .sup1{
+  background-color: transparent;
+  background-image: url("imgs/apoiadores/pat1.png");
+}
+
+#apoiadores .desc{
+  margin-top: 4%;
+  text-align: center;
+  font-family: Monda;
+  color: #0e1e3e;
+  font-size: 1.3em;
 }
 
 #contatos .title_container{
@@ -576,6 +596,19 @@ nav{
     margin: auto;
     padding-bottom: 40px;
   }
+  
+  #apoiadores .supporters{
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin: 0;
+    margin-bottom: 10%;
+  }
+  #apoiadores .sup{
+    width: 80%;
+    padding-bottom: 80%;
+    margin: auto;
+  }
     
 }
 
@@ -610,7 +643,18 @@ nav{
   #contatos .social_network .link{
     font-size: 2em;
   }
-    
+  
+   #apoiadores .supporters{
+    width: 40%;
+    position: relative;
+    margin: 0 5%;
+    margin-bottom: 10%;
+  }
+  #apoiadores .sup{
+    width: 80%;
+    padding-bottom: 80%;
+    margin: auto;
+  }
 }
 
 
@@ -715,13 +759,24 @@ nav{
     padding-top: 5%;
     padding-bottom: 13%;
   }
-    
+    /*!
   #apoiadores .supporters{
     width: 25%;
     padding-bottom: 25%;
     margin: auto 4.16666%;
   }
-  
+  */
+  #apoiadores .supporters{
+    width: 40%;
+    position: relative;
+    margin: 0 5%;
+    margin-bottom: 6%;
+  }
+  #apoiadores .sup{
+    width: 60%;
+    padding-bottom: 60%;
+    margin: auto;
+  }
   
   #contatos .title_container{
     position: relative;
