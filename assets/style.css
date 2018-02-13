@@ -303,6 +303,7 @@ nav{
   /*! background-color: #0e1e3e; */
   float: left;
   margin: auto 6.66%;
+  min-height: 250px;
 }
 
 #apoiadores::after{
@@ -759,24 +760,7 @@ nav{
     padding-top: 5%;
     padding-bottom: 13%;
   }
-    /*!
-  #apoiadores .supporters{
-    width: 25%;
-    padding-bottom: 25%;
-    margin: auto 4.16666%;
-  }
-  */
-  #apoiadores .supporters{
-    width: 40%;
-    position: relative;
-    margin: 0 5%;
-    margin-bottom: 6%;
-  }
-  #apoiadores .sup{
-    width: 60%;
-    padding-bottom: 60%;
-    margin: auto;
-  }
+
   
   #contatos .title_container{
     position: relative;
