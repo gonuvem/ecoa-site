@@ -52,11 +52,11 @@ header{
 
 .bgdark{
   background-color: #07091A;
-  transition: background-color 1s;
-    -webkit-transition: background-color 1s;
-    -ms-transition: background-color 1s;
-    -moz-transition: background-color 1s;
-    -o-transition: background-color 1s;
+  transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
 }
@@ -208,10 +208,10 @@ nav{
   100% { opacity: 1; }
 }
 .opa{
-  animation: opa 1s ease-in-out;
-  -webkit-animation: opa 1s ease-in-out; 
-  -moz-animation:    opa 1s ease-in-out; 
-  -o-animation:      opa 1s ease-in-out; 
+  animation: opa 0.5s ease-in-out;
+  -webkit-animation: opa 0.5s ease-in-out; 
+  -moz-animation:    opa 0.5s ease-in-out; 
+  -o-animation:      opa 0.5s ease-in-out; 
 }
 
 .sumir{
@@ -284,6 +284,43 @@ nav{
   margin: auto;
 }
 
+#patrocinadores .title_container{
+  background-image: url("imgs/patrocinadores.png");
+  padding-bottom: 22.3%
+}
+
+#patrocinadores::after{
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1px;
+  content: '';
+  padding-top: 50px;
+}
+
+#patrocinadores .container{
+  width: 80%;
+  margin: auto;
+}
+
+#patrocinadores .sup{
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background-size: contain;
+  
+  background-color: #0e1e3e;
+  box-shadow: 0px 0px 4px 4px #dadada;
+}
+
+#patrocinadores .supporters{
+  width: 20%;
+  /*! background-color: #0e1e3e; */
+  float: left;
+  margin: auto 6.66%;
+  min-height: 250px;
+}
+
 #apoiadores .title_container{
   background-image: url("imgs/apoiadores1.png");
   padding-bottom: 23.5%;
@@ -315,6 +352,8 @@ nav{
   padding-top: 50px;
 }
 
+
+
 #apoiadores .sup{
   width: 100%;
   padding-bottom: 100%;
@@ -329,7 +368,7 @@ nav{
   background-image: url("imgs/apoiadores/pat1.png");
 }
 
-#apoiadores .desc{
+#apoiadores .desc, #patrocinadores .desc{
   margin-top: 4%;
   text-align: center;
   font-family: Monda;
@@ -439,7 +478,7 @@ nav{
 
 
 /*! -=-=-==-=-=-=  MENU =-=-=-=-=--=-==-=-=  */
-@media screen and (min-width:200px) and (max-width: 719px){
+@media screen and (min-width:200px) and (max-width: 949px){
   /*! MENU */
   .bgdark{
     background-color: rgba(7,9,26,0.9);
@@ -597,6 +636,20 @@ nav{
     margin: auto;
     padding-bottom: 40px;
   }
+
+    #patrocinadores .supporters{
+    width: 80%;
+    /*! left: 10%; */
+    position: relative;
+    margin: 0px 10%;
+    margin-bottom: 10%;
+  }
+  #patrocinadores .sup{
+    width: 80%;
+    padding-bottom: 80%;
+    margin: auto;
+  }
+  
   
   #apoiadores .supporters{
     width: 80%;
@@ -645,19 +698,18 @@ nav{
     font-size: 2em;
   }
   
-   #apoiadores .supporters{
+   #apoiadores .supporters, #patrocinadores .supporters{
     width: 40%;
     position: relative;
     margin: 0 5%;
     margin-bottom: 10%;
   }
-  #apoiadores .sup{
+  #apoiadores .sup,#patrocinadores .sup{
     width: 80%;
     padding-bottom: 80%;
     margin: auto;
   }
 }
-
 
 @media screen and (min-width:720px) and (max-width: 1199px){
   
@@ -744,6 +796,21 @@ nav{
   
   #programacao .title{
     position: relative;
+  }
+
+  /*! Apoiadores */
+  #patrocinadores .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #patrocinadores .container{
+    width: 90%;
+  }
+  #patrocinadores .title_content{
+    position: relative;
+    /*! top: 35%; */
+    padding-top: 5%;
+    padding-bottom: 13%;
   }
   
   /*! Apoiadores */
