@@ -313,6 +313,11 @@ nav{
   box-shadow: 0px 0px 4px 4px #dadada;
 }
 
+#patrocinadores .sup1{
+  background-color: transparent;
+  background-image: url("imgs/apoiadores/pat1.png");
+}
+
 #patrocinadores .supporters{
   width: 20%;
   /*! background-color: #0e1e3e; */
@@ -362,10 +367,6 @@ nav{
   
   background-color: #0e1e3e;
   box-shadow: 0px 0px 4px 4px #dadada;
-}
-#apoiadores .sup1{
-  background-color: transparent;
-  background-image: url("imgs/apoiadores/pat1.png");
 }
 
 #apoiadores .desc, #patrocinadores .desc{
