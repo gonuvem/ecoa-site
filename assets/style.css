@@ -187,7 +187,7 @@ nav{
 #evento .desc{
   font-size: 2em;
   float: right;
-  width: 50%;
+  width: 67%;
 }
 
 /*! --------------ANIMATION-------------------- */
@@ -387,7 +387,7 @@ nav{
   width: 80%;
   clear:both;
   margin:auto;
-  padding-top: 9%;
+  padding-top: 4%;
 }
 
 #contatos .social_network .logo{
@@ -452,20 +452,53 @@ nav{
 }
 
 #by{
+  line-height: 0;
   clear: both;
-  width: 100%;
   height: 20px;
-  background-color: transparent;
-  position: absolute;
-  bottom: 0;
-  top: 93%;
-  text-align: center;
-  color: white;
-  font-family: Monda;
-  padding: 5px 0;
-  font-size: 0.75em;
 }
 
+footer{
+  position: absolute;
+  bottom: 0px;
+  clear: both;
+  font-family: Monda;
+  color: white;
+  /*! height: 160px; */
+  width: 100%;
+  background-color: #f650;
+  //left: 10%;
+  padding: auto 10px;
+  text-align: center;
+}
+
+footer div{
+  /*! display: inline-block; */
+}
+
+footer #title{
+    line-height: 80px;
+    /*! width: 50%; */
+    float: left;
+}
+
+footer #realizacao{
+  font-family: Monda;
+  color: white;
+  height: 80px;
+  font-size: 2em;
+  display: inline-block;
+  /*! width: 50%; */
+  /*! float: left; */
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+footer img{
+  position: relative;
+  height: 80px;
+  float: left;
+}
 
 /*! EVENTO:: Texto*/
 @media screen and (min-width:1200px) and (max-width: 1300px){
@@ -664,7 +697,21 @@ nav{
     padding-bottom: 80%;
     margin: auto;
   }
-    
+  
+  footer #title{
+    font-size: 0.5em;
+    line-height: 50px;
+  }
+  footer img{
+    height: 50px;
+  }
+  footer #by{
+    font-size: 0.5em;
+  }
+  footer #realizacao{
+    height: 50px;
+    padding-bottom: 10px;
+  }
 }
 
 
@@ -710,6 +757,21 @@ nav{
     padding-bottom: 80%;
     margin: auto;
   }
+  
+  footer #title{
+    font-size: 0.5em;
+    line-height: 50px;
+  }
+  footer img{
+    height: 50px;
+  }
+  footer #by{
+    font-size: 0.7em;
+  }
+  footer #realizacao{
+    height: 50px;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (min-width:720px) and (max-width: 1199px){
@@ -740,10 +802,26 @@ nav{
   }
   
   #contatos .content{
-    padding-top: 9%;
+    padding-top: 3%;
   }
   #contatos .title_content{
     padding-top: 9%;
+  }
+  
+  
+  footer #title{
+    font-size: 0.5em;
+    line-height: 50px;
+  }
+  footer img{
+    height: 50px;
+  }
+  footer #by{
+    font-size: 0.7em;
+  }
+  footer #realizacao{
+    height: 50px;
+    padding-bottom: 10px;
   }
   
 }
@@ -837,6 +915,10 @@ nav{
   #contatos .title_container > div{
     position: relative;
     padding-bottom: 0;
-  }  
+  } 
+
+  footer{
+    position: relative;
+  }
 }
 
