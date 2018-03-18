@@ -13,7 +13,6 @@
     <!--<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/icon.ico">-->
     <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png">
     
-
     <style></style>
 
     <!-- Facebook Open Graph -->
@@ -41,7 +40,7 @@
 
 <body>
 <header>
-    <div id="menu-content">
+    <div id="menu-content" class="bgdark">
         <div id="head">
             <img src="assets/imgs/logo.png">
         </div>
@@ -98,72 +97,16 @@
         </div>
 
         <div class="container">
-            <div class="content">
-                
-                <div class="people_container">
+            <div class="content" id="palestrantes_container">
+                <div class="people_container" v-for="people in palestrantes">
                         <div class="center">
-                            <div class="people_photo"></div>
+                            <div class="people_photo"><img v-bind:src="people.img" /></div>
+                            <div class="people_name">{{ people.name }}</div>
                             <div class="people_desc">
-                                    Si u mundo tá muito paradis? 
-                                    Toma um mé que o mundo vai girarzis! 
-                                    Mais vale um bebadis conhecidiss, 
-                                    que um alcoolatra anonimis. 
-                                    Detraxit consequat et quo num tendi nada. 
-                                    Mauris nec dolor in eros commodo tempor. 
-                                    Aenean aliquam molestie leo, 
-                                    vitae iaculis nisl. 
+                                {{ people.desc }}
                             </div>
                         </div>
                     </div>
-
-                <div class="people_container">
-                        <div class="center">
-                            <div class="people_photo"></div>
-                            <div class="people_desc">
-                                    Si u mundo tá muito paradis? 
-                                    Toma um mé que o mundo vai girarzis! 
-                                    Mais vale um bebadis conhecidiss, 
-                                    que um alcoolatra anonimis. 
-                                    Detraxit consequat et quo num tendi nada. 
-                                    Mauris nec dolor in eros commodo tempor. 
-                                    Aenean aliquam molestie leo, 
-                                    vitae iaculis nisl. 
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="people_container">
-                        <div class="center">
-                            <div class="people_photo"></div>
-                            <div class="people_desc">
-                                    Si u mundo tá muito paradis? 
-                                    Toma um mé que o mundo vai girarzis! 
-                                    Mais vale um bebadis conhecidiss, 
-                                    que um alcoolatra anonimis. 
-                                    Detraxit consequat et quo num tendi nada. 
-                                    Mauris nec dolor in eros commodo tempor. 
-                                    Aenean aliquam molestie leo, 
-                                    vitae iaculis nisl. 
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="people_container">
-                        <div class="center">
-                            <div class="people_photo"></div>
-                            <div class="people_desc">
-                                    Si u mundo tá muito paradis? 
-                                    Toma um mé que o mundo vai girarzis! 
-                                    Mais vale um bebadis conhecidiss, 
-                                    que um alcoolatra anonimis. 
-                                    Detraxit consequat et quo num tendi nada. 
-                                    Mauris nec dolor in eros commodo tempor. 
-                                    Aenean aliquam molestie leo, 
-                                    vitae iaculis nisl. 
-                            </div>
-                        </div>
-                    </div>
-
             </div>
         </div>
     </section>
@@ -173,14 +116,37 @@
         <div class="title_container">
                 <div class="title_content">
                     <div class="title"> Programação </div>
+                    <div class="container">
+                        <div class="content">
+                            <table >
+                                <thead >
+                                    <tr>
+                                        <th>Hora</th>
+                                        <th>description</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <th>8:00 - 9:00</div>
+                                        <th >Toma um mé que o mundo vai girarzis!</div>
+                                    </tr>
+                                    <tr>
+                                        <th>8:00 - 9:00</th>
+                                        <th>Toma um mé que o mundo vai girarzis!</th>
+                                    </tr>
+                                    <tr>
+                                            <th>8:00 - 9:00</th>
+                                            <th >Toma um mé que o mundo vai girarzis!</th>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
 
-        <div class="container">
-                <div class="content">
-                    
-                </div>
-            </div>
+        
     </section>
 
     <section id="patrocinadores">
@@ -191,23 +157,12 @@
             </div>
         
         <div class="container">
-                <div class="content" >
-                    <div class="supporters" >
-                        <div class="sup sup1"></div>
+                <div class="content" id="patrocinadores_container">
+                    
+                    <div class="supporters" v-for="sponsor in patrocinadores">
+                        <div class="sup"><img v-bind:src="sponsor.img"></div>
                         <div class="desc">
-                            Aenean aliquam
-                        </div>
-                    </div>
-                    <div class="supporters" >
-                        <div class="sup sup2"></div>
-                        <div class="desc">
-                            Aenean aliquam
-                        </div>
-                    </div>
-                    <div class="supporters" >
-                        <div class="sup sup3"></div>
-                        <div class="desc">
-                            Aenean aliquam
+                            {{ sponsor.desc }}
                         </div>
                     </div>
                 </div>
@@ -222,23 +177,11 @@
             </div>
         
         <div class="container">
-                <div class="content" >
-                    <div class="supporters" >
-                        <div class="sup sup1"></div>
+                <div class="content" id="apoiadores_container">
+                    <div class="supporters" v-for="supporter in apoiadores">
+                        <div class="sup"><img v-bind:src="supporter.img"></div>
                         <div class="desc">
-                            Approach Tecnologia
-                        </div>
-                    </div>
-                    <div class="supporters" >
-                        <div class="sup sup2"></div>
-                        <div class="desc">
-                            Aenean aliquam
-                        </div>
-                    </div>
-                    <div class="supporters" >
-                        <div class="sup sup3"></div>
-                        <div class="desc">
-                            Aenean aliquam
+                            {{ supporter.desc }}
                         </div>
                     </div>
                 </div>
@@ -277,21 +220,105 @@
                             </a>
                         </div>
                 </div>
-                <footer> 
-                    <div id="realizacao">
-                        <div id="title">Realização: </div> <img src="assets/imgs/ufpi.png"/>
-                    </div>
-                    <div id="by"> Created by jeovazero </div>
-                </footer>
-                
+            
             </div>
         
     </section>
+    <footer> 
+        <div id="realizacao">
+            <div id="title">Realização: </div> <img src="assets/imgs/ufpi.png"/>
+        </div>
+        <div id="by"> created by @jeovazero </div>
+    </footer>
 
 </div>
 </body>
 <script src="assets/navigation.js"></script>
 <script src="assets/canvas.js"></script>
+<script src="assets/vue.js"></script>
+<!--<script src-"assets/vue.min.js"></script>-->
+<script>
+    var palestrantes = [
+        { 
+            img: 'assets/imgs/palestrantes/p3.jpeg',
+            name: 'Anandi',
+            desc:  'Si u mundo tá muito paradis?\
+                    Toma um mé que o mundo vai girarzis! \
+                    Mais vale um bebadis conhecidis'
+        },
+        { 
+            img: 'assets/imgs/palestrantes/p3.jpeg',
+            name: 'Gaspar',
+            desc:  'Si u mundo tá muito paradis?\
+                    Toma um mé que o mundo vai girarzis! \
+                    Mais vale um bebadis conhecidis'
+        },
+        { 
+            img: 'assets/imgs/palestrantes/p3.jpeg',
+            name: 'Gaspar',
+            desc:  'Si u mundo tá muito paradis?\
+                    Toma um mé que o mundo vai girarzis! \
+                    Mais vale um bebadis conhecidis'
+        },
+        { 
+            img: 'assets/imgs/palestrantes/p3.jpeg',
+            name: 'Gaspar',
+            desc:  'Si u mundo tá muito paradis?\
+                    Toma um mé que o mundo vai girarzis! \
+                    Mais vale um bebadis conhecidis'
+        }
+    ]
+
+    var patrocinadores = [
+        {
+            img: 'assets/imgs/patrocinadores/pat1.png',
+            desc: 'Aenean aliquam'
+        },
+        {
+            img: 'assets/imgs/patrocinadores/pat1.png',
+            desc: 'Aenean aliquam'
+        },
+        {
+            img: 'assets/imgs/patrocinadores/pat1.png',
+            desc: 'Aenean aliquam'
+        }
+    ]
+
+    var apoiadores = [
+        {
+            img: 'assets/imgs/apoiadores/pat1.png',
+            desc: 'Aenean aliquam'
+        },{
+            img: 'assets/imgs/apoiadores/pat1.png',
+            desc: 'Aenean aliquam'
+        },
+        {
+            img: 'assets/imgs/apoiadores/pat1.png',
+            desc: 'Aenean aliquam'
+        }
+    ]
+
+    new Vue({
+        el: "#palestrantes_container",
+        data: {
+            palestrantes: palestrantes
+        }
+    });
+
+    new Vue({
+        el: "#patrocinadores_container",
+        data: {
+            patrocinadores: patrocinadores
+        }
+    });
+
+    new Vue({
+        el: "#apoiadores_container",
+        data: {
+            apoiadores: apoiadores
+        }
+    })         
+</script>
 <script>
     var menu = document.getElementById("menu-square");
     var nav = document.getElementsByTagName("nav")[0];

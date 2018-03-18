@@ -109,7 +109,6 @@ nav{
 
 .selectedNavItem{
   color: #93C4FF;
-  font-weight: bolder;
 }
 
 
@@ -142,7 +141,7 @@ nav{
 /*!########################################*/
 
 .title_container{
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -155,11 +154,12 @@ nav{
   color: white;
   font-family: Dosis;
   position: relative;
+  padding-bottom: 6%;
 }
 
 .title_container > div {
   position: absolute;
-  left: 0; right: 0; top: 0; bottom: 0;
+  left: 0; right: 0; top: 0; /*! bottom: 0; */
 }
 
 .title{
@@ -192,26 +192,26 @@ nav{
 
 /*! --------------ANIMATION-------------------- */
 @-webkit-keyframes opa {
-  0%   { opacity: 0; }
+  0%   { opacity: 0.25; }
   100% { opacity: 1; }
 }
 @-moz-keyframes opa {
-  0%   { opacity: 0; }
+  0%   { opacity: 0.25; }
   100% { opacity: 1; }
 }
 @-o-keyframes opa {
-  0%   { opacity: 0; }
+  0%   { opacity: 0.25; }
   100% { opacity: 1; }
 }
 @keyframes opa {
-  0%   { opacity: 0; }
+  0%   { opacity: 0.25; }
   100% { opacity: 1; }
 }
 .opa{
-  animation: opa 0.5s ease-in-out;
-  -webkit-animation: opa 0.5s ease-in-out; 
-  -moz-animation:    opa 0.5s ease-in-out; 
-  -o-animation:      opa 0.5s ease-in-out; 
+  animation: opa 0.5s ease;
+  -webkit-animation: opa 0.5s ease; 
+  -moz-animation:    opa 0.5s ease; 
+  -o-animation:      opa 0.5s ease; 
 }
 
 .sumir{
@@ -245,8 +245,20 @@ nav{
   width: 50%;
   margin: auto;
   border-radius: 50%;
-  padding-bottom: 50%;
-  background-color: #0e2847;
+  overflow: auto;
+  box-shadow: 0px 0px 2px 2px #aaa;
+}
+
+#palestrantes .people_photo img{
+  width: 100%;
+  height: 100%;
+}
+
+#palestrantes .people_name{
+  width: 50%;
+  margin: 10px auto auto auto;
+  text-align: center;
+
 }
 
 #palestrantes .people_desc::before{
@@ -259,6 +271,11 @@ nav{
   border-radius: 20px;
 }
 
+#palestrantes .people_desc{
+  width: 80%;
+  margin: auto;
+}
+
 #palestrantes::after{
   content: '';
   width: 100%;
@@ -268,20 +285,65 @@ nav{
 }
 
 #programacao .title_container{
-  background-image: url("imgs/programacao1.png");
-  padding-bottom: 24.27%;
+  background-image: url("imgs/programacao5.png");
+  padding-bottom: 37.06%;
+  margin-bottom: 0;
 }
 
 #programacao .title_content{
-  padding-top: 9%;
+  padding-top: 5%;
+}
+
+#programacao .title{
+  position: relative;
+  clear: both;
+  display: block;
 }
 
 #programacao .container{
-  width: 80%;
-  height: 200px;
-  padding-bottom: 50px;
+  width: 100%;
+  /*! height: 200px; */
+  /*! padding-bottom: 6%; */
   background-color: transparent;
-  margin: auto;
+  margin: 20px auto;
+  padding-top: 4%;
+  /*! background-image: url("../"); */
+  position: relative;
+  clear: both;
+}
+
+#programacao .content{
+  border: 1px solid #0f1136;
+  /*! padding: 10px; */
+  border-radius: 10px;
+  color: white;
+  font-family: Monda;
+  background-color: transparent;
+  top: 6%;
+  position: relative;
+}
+
+#programacao tbody th:nth-child(1){
+  background-color: #132450;
+  width: 20%;
+}
+#programacao tbody th:nth-child(2){
+  background-color: #183f76;
+  width: 80%;
+}
+
+
+#programacao thead th:nth-child(1){
+  background-color: #132450;
+  width: 20%;
+}
+#programacao thead th:nth-child(2){
+  background-color: #183f76;
+  width: 80%;
+}
+
+#programacao table{
+  width: 100%;
 }
 
 #patrocinadores .title_container{
@@ -289,35 +351,53 @@ nav{
   padding-bottom: 22.3%
 }
 
-#patrocinadores::after{
-  clear: both;
-  display: block;
-  width: 100%;
-  height: 1px;
-  content: '';
-  padding-top: 50px;
-}
+
 
 #patrocinadores .container{
   width: 80%;
   margin: auto;
 }
 
-#patrocinadores .sup{
+#patrocinadores .content:after{
   width: 100%;
-  padding-bottom: 100%;
-  border-radius: 50%;
-  background-size: contain;
-  
-  background-color: #0e1e3e;
-  box-shadow: 0px 0px 4px 4px #dadada;
+  display: block;
+  content: '';
+  height: 1px;
+  clear: both;
 }
 
+#patrocinadores:after{
+  width: 100%;
+  clear:both;
+  height: 1px;
+  content: '';
+  display: block;
+  padding-top: 50px;
+}
+
+#patrocinadores .sup{
+  width: 100%;
+  /*! padding-bottom: 100%; */
+  border-radius: 50%;
+  /*! background-size: contain; */
+  overflow: hidden;
+  /*! background-color: #0e1e3e; */
+  /*! box-shadow: 0px 0px 2px 2px #ffffff; */
+}
+
+#patrocinadores .sup img{
+  width: 100%;
+  /*! height: 100%; */
+  box-shadow: 0px 0px 2px 2px #aaa;
+  border-radius: 50%;
+}
+
+/*
 #patrocinadores .sup1{
   background-color: transparent;
   background-image: url("imgs/apoiadores/pat1.png");
 }
-
+*/
 #patrocinadores .supporters{
   width: 20%;
   /*! background-color: #0e1e3e; */
@@ -361,12 +441,18 @@ nav{
 
 #apoiadores .sup{
   width: 100%;
-  padding-bottom: 100%;
+  /*! padding-bottom: 100%; */
   border-radius: 50%;
   background-size: contain;
-  
-  background-color: #0e1e3e;
-  box-shadow: 0px 0px 4px 4px #dadada;
+  overflow: hidden;
+  /*! background-color: #0e1e3e; */
+  /*box-shadow: 0px 0px 4px 4px #dadada;*/
+}
+
+#apoiadores .sup img{
+  width: 100%;
+  box-shadow: 0px 0px 2px 2px #aaa;
+  border-radius: 50%;
 }
 
 #apoiadores .desc, #patrocinadores .desc{
@@ -388,6 +474,14 @@ nav{
   clear:both;
   margin:auto;
   padding-top: 4%;
+}
+
+#contatos .content:after{
+  width: 100%;
+  clear:both;
+  height: 1px;
+  content: '';
+  display: block;
 }
 
 #contatos .social_network .logo{
@@ -452,23 +546,26 @@ nav{
 }
 
 #by{
-  line-height: 0;
-  clear: both;
-  height: 20px;
+  line-height: 50px;
+  /*! clear: both; */
+  height: 50px;
+  float: right;
+  margin-right: 10%;
 }
 
 footer{
-  position: absolute;
-  bottom: 0px;
+  /*! position: absolute; */
+  /*! bottom: 0px; */
   clear: both;
   font-family: Monda;
   color: white;
   /*! height: 160px; */
   width: 100%;
-  background-color: #f650;
-  //left: 10%;
+  background-color: rgb(11, 11, 12);
+  /*!left: 10%;*/
   padding: auto 10px;
   text-align: center;
+  z-index: 1000;
 }
 
 footer div{
@@ -476,7 +573,7 @@ footer div{
 }
 
 footer #title{
-    line-height: 80px;
+    line-height: 50px;
     /*! width: 50%; */
     float: left;
 }
@@ -484,20 +581,32 @@ footer #title{
 footer #realizacao{
   font-family: Monda;
   color: white;
-  height: 80px;
+  height: 50px;
   font-size: 2em;
   display: inline-block;
   /*! width: 50%; */
   /*! float: left; */
   position: relative;
-  padding-bottom: 10px;
-  padding-top: 20px;
+  /*! padding-bottom: 10px; */
+  /*! padding-top: 20px; */
+  float: left;
+  margin-left: 10%;
+  margin-top: 5px;
 }
 
 footer img{
   position: relative;
-  height: 80px;
+  height: 50px;
   float: left;
+  /*! margin-top: 5px; */
+}
+
+footer::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  clear: both;
 }
 
 /*! EVENTO:: Texto*/
@@ -680,7 +789,7 @@ footer img{
   }
   #patrocinadores .sup{
     width: 80%;
-    padding-bottom: 80%;
+    /*! padding-bottom: 80%; */
     margin: auto;
   }
   
@@ -694,7 +803,7 @@ footer img{
   }
   #apoiadores .sup{
     width: 80%;
-    padding-bottom: 80%;
+    /*! padding-bottom: 80%; */
     margin: auto;
   }
   
@@ -710,7 +819,7 @@ footer img{
   }
   footer #realizacao{
     height: 50px;
-    padding-bottom: 10px;
+    /*! padding-bottom: 10px; */
   }
 }
 
@@ -742,6 +851,8 @@ footer img{
     padding-bottom: 40px;
     font-family: Dosis;
   }
+
+  
   #contatos .social_network .link{
     font-size: 2em;
   }
@@ -754,7 +865,7 @@ footer img{
   }
   #apoiadores .sup,#patrocinadores .sup{
     width: 80%;
-    padding-bottom: 80%;
+    /*! padding-bottom: 80%; */
     margin: auto;
   }
   
@@ -763,14 +874,14 @@ footer img{
     line-height: 50px;
   }
   footer img{
-    height: 50px;
+    height: 40px;
   }
   footer #by{
     font-size: 0.7em;
   }
   footer #realizacao{
     height: 50px;
-    padding-bottom: 10px;
+    /*! padding-bottom: 10px; */
   }
 }
 
@@ -805,7 +916,8 @@ footer img{
     padding-top: 3%;
   }
   #contatos .title_content{
-    padding-top: 9%;
+    padding-top: 6%;
+    padding-bottom: 6%;
   }
   
   
@@ -864,7 +976,7 @@ footer img{
   /*! Programacao*/
   #programacao .title_container{
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 8%;
   }  
   
   #programacao .title_content{
@@ -914,7 +1026,7 @@ footer img{
   }  
   #contatos .title_container > div{
     position: relative;
-    padding-bottom: 0;
+    /*! padding-bottom: 0; */
   } 
 
   footer{
