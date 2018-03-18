@@ -179,7 +179,7 @@ nav{
 
 
 #evento .title_container{
-  background-image: url("imgs/evento2.png");
+  background-image: url("imgs/bg/evento.png");
   padding-bottom: 41%;
   background-color: #d9e1f6;
 }
@@ -220,7 +220,7 @@ nav{
 /*---------------------------------------------*/
 
 #palestrantes .title_container{
-  background-image: url("imgs/palestrantes1.png");
+  background-image: url("imgs/bg/palestrantes.png");
   padding-bottom: 25%;
   background-color: #d9e1f6;
 }
@@ -285,7 +285,7 @@ nav{
 }
 
 #programacao .title_container{
-  background-image: url("imgs/programacao5.png");
+  background-image: url("imgs/bg/programacao.png");
   padding-bottom: 37.06%;
   margin-bottom: 0;
 }
@@ -347,7 +347,7 @@ nav{
 }
 
 #patrocinadores .title_container{
-  background-image: url("imgs/patrocinadores.png");
+  background-image: url("imgs/bg/patrocinadores.png");
   padding-bottom: 22.3%
 }
 
@@ -407,7 +407,7 @@ nav{
 }
 
 #apoiadores .title_container{
-  background-image: url("imgs/apoiadores1.png");
+  background-image: url("imgs/bg/apoiadores.png");
   padding-bottom: 23.5%;
 }
 
@@ -464,7 +464,7 @@ nav{
 }
 
 #contatos .title_container{
-  background-image: url("imgs/contatos2.png");
+  background-image: url("imgs/bg/contatos.png");
   padding-bottom: 38.5031%;
   position: relative;
 }
@@ -496,29 +496,29 @@ nav{
 }
 
 #contatos .instagram .logo{
-  background-image: url("imgs/inst.png");
+  background-image: url("imgs/redes/inst.png");
 }
 
 #contatos .instagram .logo:hover{
-  background-image: url("imgs/inst2.png");
+  background-image: url("imgs/redes/inst2.png");
   cursor: pointer;
 }
 
 #contatos .fb .logo{
-  background-image: url("imgs/fb.png");
+  background-image: url("imgs/redes/fb.png");
 }
 
 #contatos .fb .logo:hover{
-  background-image: url("imgs/fb2.png");
+  background-image: url("imgs/redes/fb2.png");
   cursor: pointer;
 }
 
 #contatos .twitter .logo{
-  background-image: url("imgs/tt.png");
+  background-image: url("imgs/redes/tt.png");
 }
 
 #contatos .twitter .logo:hover{
-  background-image: url("imgs/tt2.png");
+  background-image: url("imgs/redes/tt2.png");
   cursor: pointer;
 }
 
@@ -981,7 +981,7 @@ footer::after{
   
   #programacao .title_content{
     position: relative;
-    padding-top: 8%;
+    padding-top: 13%;
     padding-bottom: 8%;
   }
   
@@ -1000,7 +1000,7 @@ footer::after{
   #patrocinadores .title_content{
     position: relative;
     /*! top: 35%; */
-    padding-top: 5%;
+    padding-top: 6%;
     padding-bottom: 13%;
   }
   
