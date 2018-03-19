@@ -1,0 +1,15 @@
+{ "list": [
+    {
+        "img": "./dist/assets/imgs/patrocinadores/pat1.png",
+        "desc": "Aenean aliquam"
+    },
+    {
+        "img": "./dist/assets/imgs/patrocinadores/pat1.png",
+        "desc": "Aenean aliquam"
+    },
+    {
+        "img": "./dist/assets/imgs/patrocinadores/pat1.png",
+        "desc": "Aenean aliquam"
+    }
+]
+}

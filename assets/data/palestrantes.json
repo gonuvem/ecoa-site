@@ -1,0 +1,23 @@
+{ "list" : [
+        { 
+            "img": "./dist/assets/imgs/palestrantes/p3.jpeg",
+            "name": "Anandi",
+            "desc":  "Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mais vale um bebadis conhecidis"
+        },
+        { 
+            "img": "./dist/assets/imgs/palestrantes/p3.jpeg",
+            "name": "Gaspar",
+            "desc":  "Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mais vale um bebadis conhecidis"
+        },
+        { 
+            "img": "./dist/assets/imgs/palestrantes/p3.jpeg",
+            "name": "Gaspar",
+            "desc":  "Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mais vale um bebadis conhecidis"
+        },
+        { 
+            "img": "./dist/assets/imgs/palestrantes/p3.jpeg",
+            "name": "Gaspar",
+            "desc":  "Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mais vale um bebadis conhecidis"
+        }
+    ]
+}

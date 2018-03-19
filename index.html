@@ -8,12 +8,12 @@
     <meta name="description" content="Encontro de Computação Aplicada">
     <meta name="thumbnail" content="assets/imgs/favicon.png">
     <!--<meta name="author" content="jeovazero">-->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./dist/zero.css">
     
     <!--<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/icon.ico">-->
-    <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./dist/assets/imgs/logo/favicon.png">
     
-    <style></style>
+    
 
     <!-- Facebook Open Graph -->
     <meta property="og:type" content="website">
@@ -42,7 +42,7 @@
 <header>
     <div id="menu-content" class="bgdark">
         <div id="head">
-            <img src="assets/imgs/logo.png">
+            <img src="./dist/assets/imgs/logo/logo.png">
         </div>
         <div id="menu-square">
             <span class="bar"></span>
@@ -226,113 +226,18 @@
     </section>
     <footer> 
         <div id="realizacao">
-            <div id="title">Realização: </div> <img src="assets/imgs/ufpi.png"/>
+            <div id="title">Realização: </div> <img src="./dist/assets/imgs/logo/ufpi.png"/>
         </div>
         <div id="by"> created by @jeovazero </div>
     </footer>
 
 </div>
 </body>
-<script src="assets/navigation.js"></script>
-<script src="assets/canvas.js"></script>
-<script src="assets/vue.js"></script>
+<script src="dist/navigation.zero.js"></script>
+<script src="dist/canvas.zero.js"></script>
+<script src="dist/zero.zero.js"></script>
 <!--<script src-"assets/vue.min.js"></script>-->
 <script>
-    var palestrantes = [
-        { 
-            img: 'assets/imgs/palestrantes/p3.jpeg',
-            name: 'Anandi',
-            desc:  'Si u mundo tá muito paradis?\
-                    Toma um mé que o mundo vai girarzis! \
-                    Mais vale um bebadis conhecidis'
-        },
-        { 
-            img: 'assets/imgs/palestrantes/p3.jpeg',
-            name: 'Gaspar',
-            desc:  'Si u mundo tá muito paradis?\
-                    Toma um mé que o mundo vai girarzis! \
-                    Mais vale um bebadis conhecidis'
-        },
-        { 
-            img: 'assets/imgs/palestrantes/p3.jpeg',
-            name: 'Gaspar',
-            desc:  'Si u mundo tá muito paradis?\
-                    Toma um mé que o mundo vai girarzis! \
-                    Mais vale um bebadis conhecidis'
-        },
-        { 
-            img: 'assets/imgs/palestrantes/p3.jpeg',
-            name: 'Gaspar',
-            desc:  'Si u mundo tá muito paradis?\
-                    Toma um mé que o mundo vai girarzis! \
-                    Mais vale um bebadis conhecidis'
-        }
-    ]
 
-    var patrocinadores = [
-        {
-            img: 'assets/imgs/patrocinadores/pat1.png',
-            desc: 'Aenean aliquam'
-        },
-        {
-            img: 'assets/imgs/patrocinadores/pat1.png',
-            desc: 'Aenean aliquam'
-        },
-        {
-            img: 'assets/imgs/patrocinadores/pat1.png',
-            desc: 'Aenean aliquam'
-        }
-    ]
-
-    var apoiadores = [
-        {
-            img: 'assets/imgs/apoiadores/pat1.png',
-            desc: 'Aenean aliquam'
-        },{
-            img: 'assets/imgs/apoiadores/pat1.png',
-            desc: 'Aenean aliquam'
-        },
-        {
-            img: 'assets/imgs/apoiadores/pat1.png',
-            desc: 'Aenean aliquam'
-        }
-    ]
-
-    new Vue({
-        el: "#palestrantes_container",
-        data: {
-            palestrantes: palestrantes
-        }
-    });
-
-    new Vue({
-        el: "#patrocinadores_container",
-        data: {
-            patrocinadores: patrocinadores
-        }
-    });
-
-    new Vue({
-        el: "#apoiadores_container",
-        data: {
-            apoiadores: apoiadores
-        }
-    })         
-</script>
-<script>
-    var menu = document.getElementById("menu-square");
-    var nav = document.getElementsByTagName("nav")[0];
-    function expand(){
-        console.log(nav.style.maxHeight)
-        if(nav.style.maxHeight !== "200px"){
-            nav.style.maxHeight = "200px";
-            menu.classList.add('expand');
-        }else {
-            nav.style.maxHeight = "0px";
-            menu.classList.remove('expand');
-        }
-    }
-    menu.onclick = function(){ console.log("menu"); expand(); }
-    nav.onclick = function(){ console.log("hey"); expand();}
 </script>
 </html>
