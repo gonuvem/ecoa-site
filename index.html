@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title> ECOA - Encontro de Computação Aplicada</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Encontro de Computação Aplicada">
+    <meta name="thumbnail" content="assets/imgs/favicon.png">
+    <!--<meta name="author" content="jeovazero">-->
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!--<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/icon.ico">-->
+    <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png">
+    
+    <style></style>
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ecoa.ufpi.br"> <!-- <- De olho aqui -->
+    <meta property="og:title" content="ECOA">
+    <meta property="og:image" content="assets/img/ecoa_fb.png">
+    <meta property="og:description" content="Encontro de Computação Aplicada">
+    <meta property="og:site_name" content="ECOA Encontro de Computação Aplicada">
+    <meta property="og:locale" content="pt_BR">
+    <!-- Dimensoes da imagem - Alterar o tamanho depois-->
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="200">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="@ecoaoficial">
+    <meta name="twitter:creator" content="@jeovazero">
+    <meta name="twitter:url" content="http://ecoa.ufpi.br"> <!-- De olho aqui-->
+    <meta name="twitter:title" content="ECOA">
+    <meta name="twitter:description" content="Encontro de Computação Aplicada">
+    <meta name="twitter:image" content="assets/img/ecoa.png">
+
+</head>
+
+<body>
+<header>
+    <div id="menu-content" class="bgdark">
+        <div id="head">
+            <img src="assets/imgs/logo.png">
+        </div>
+        <div id="menu-square">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div id="menu-options" class="show-menu">
+            <nav>
+                <ul>
+                    <a href="#evento"><li>Evento</li></a><span>•</span>
+                    <a href="#palestrantes"><li>Palestrantes</li></a><span>•</span>
+                    <a href="#programacao"><li>Programação</li></a><span>•</span>
+                    <a href="#patrocinadores"><li>Patrocinadores</li></a><span>•</span>
+                    <a href="#apoiadores"><li>Apoiadores</li></a><span>•</span>
+                    <a href="#contatos"><li>Contatos</li></a><span>•</span>
+                    <a href="https://goo.gl/forms/NftANsBZXvQWX0is1" target="blank"><li>Inscreva-se</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</header>
+<div id="wrapper">
+    <section id="intro">
+        <canvas id="canvas"></canvas>
+        <div class="modal"></div>
+        <div id="ecoa">
+            <div class="txt-ecoa">
+                <div class="middle"> Encontro de Computação Aplicada </div>
+                <a href="https://goo.gl/forms/NftANsBZXvQWX0is1" target="blank"><button class="button -regular" style="position:relative; top:70px;">Inscreva-se !</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="evento">
+        <div class="title_container">
+            <div class="title_content">
+                <div class="title">Evento</div>
+                <div class="desc">
+                    O Encontro de Computação Aplicada tem como objetivo apresentar de forma descontraída um pouco da realidade do mercado da tecnologia da informação. o ECOA irá ter a participação de desenvolvedores, game studios, hackers e startups inovadoras para bater um papo com a galera sobre seus projetos, novidades e o que está sendo usado de mais novo no momento.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="palestrantes">
+        
+        <div class="title_container">
+            <div class="title_content">
+                <div class="title">Palestrantes</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content" id="palestrantes_container">
+                <div class="people_container" v-for="people in palestrantes">
+                        <div class="center">
+                            <div class="people_photo"><img v-bind:src="people.img" /></div>
+                            <div class="people_name">{{ people.name }}</div>
+                            <div class="people_desc">
+                                {{ people.desc }}
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="programacao">
+        <div class="title_container">
+                <div class="title_content">
+                    <div class="title"> Programação </div>
+                    <div class="container">
+                        <div class="content">
+                            <table >
+                                <thead >
+                                    <tr>
+                                        <th>Hora</th>
+                                        <th>Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <th>14:00 - 16:00</div>
+                                        <th>Será definido em breve</div>
+                                    </tr>
+                                    <tr>
+                                        <th>16:00 - 18:00</div>
+                                        <th>Será definido em breve</div>
+                                    </tr>
+                                    <tr>
+                                        <th>18:00 - 20:00</div>
+                                        <th>Será definido em breve</div>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        
+    </section>
+
+    <section id="patrocinadores">
+        <div class="title_container">
+                <div class="title_content">
+                    <div class="title"> Patrocinadores </div>
+                </div>
+            </div>
+        
+        <div class="container">
+                <div class="content" id="patrocinadores_container">
+                    
+                    <div class="supporters" v-for="sponsor in patrocinadores">
+                        <div class="sup"><img v-bind:src="sponsor.img"></div>
+                        <div class="desc">
+                            {{ sponsor.desc }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="apoiadores">
+        <div class="title_container">
+                <div class="title_content">
+                    <div class="title"> Apoiadores </div>
+                </div>
+            </div>
+        
+        <div class="container">
+                <div class="content" id="apoiadores_container">
+                    <div class="supporters" v-for="supporter in apoiadores">
+                        <div class="sup"><img v-bind:src="supporter.img"></div>
+                        <div class="desc">
+                            {{ supporter.desc }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="contatos">
+        <div class="title_container">
+                <div class="title_content">
+                    <div class="title"> Contatos </div>
+                    <div class="content" >
+                            <a href="https://www.facebook.com/ecoafactos/">
+                                <div class="social_network fb" >
+                                    <div class="logo"></div>
+                                    <div class="link">
+                                        <span>fb.com/ecoafactos</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://twitter.com/ecoaoficial/">
+                                <div class="social_network twitter" >
+                                    <div class="logo"> </div>
+                                    <div class="link">
+                                        <span>@ecoaoficial</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/ecoaoficial/">
+                                <div class="social_network instagram" >
+                                    <div class="logo"> </div>
+                                    <div class="link">
+                                        <span>@ecoaoficial</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            
+            </div>
+        
+    </section>
+    <footer> 
+        <div id="realizacao">
+            <div id="title">Realização: </div> <img src="assets/imgs/ufpi.png"/>
+        </div>
+        <div id="by"> created by @jeovazero </div>
+    </footer>
+
+</div>
+</body>
+<script src="assets/navigation.js"></script>
+<script src="assets/canvas.js"></script>
+<script src="assets/vue.js"></script>
+<!--<script src-"assets/vue.min.js"></script>-->
+<script>
+    var palestrantes = [
+        {
+            img: 'assets/imgs/palestrantes/p1.png',
+            name: 'Paula Grangeiro',
+            desc: 'Vida Freela: Como decolar com a sua carreira de dev freelancer'
+        },
+        { 
+            img: 'assets/imgs/palestrantes/p2.png',
+            name: 'Ruhan Bello',
+            desc: 'Profissão: Desenvolvedor de jogos'
+        },
+        { 
+            img: 'assets/imgs/palestrantes/pi.png',
+            name: 'Será definido em breve',
+            desc: 'Aguarde a divulgação'
+        }
+    ]
+
+    var patrocinadores = [
+        {
+            img: 'assets/imgs/patrocinadores/pat2.png',
+            desc: 'Approach Tecnologia'
+        },
+        {
+            img: 'assets/imgs/patrocinadores/pat4.png',
+            desc: 'Fatepi'
+        },
+        {
+            img: 'assets/imgs/patrocinadores/pat3.png',
+            desc: 'Teresina Coworking'
+        }
+    ]
+
+    var apoiadores = [
+        {
+            img: 'assets/imgs/apoiadores/apo1.png',
+            desc: 'FACTOS'
+        },
+        {
+            img: 'assets/imgs/apoiadores/apo2.png',
+            desc: 'UFPI'
+        }
+    ]
+
+    new Vue({
+        el: "#palestrantes_container",
+        data: {
+            palestrantes: palestrantes
+        }
+    });
+
+    new Vue({
+        el: "#patrocinadores_container",
+        data: {
+            patrocinadores: patrocinadores
+        }
+    });
+
+    new Vue({
+        el: "#apoiadores_container",
+        data: {
+            apoiadores: apoiadores
+        }
+    })         
+</script>
+<script>
+    var menu = document.getElementById("menu-square");
+    var nav = document.getElementsByTagName("nav")[0];
+    function expand(){
+        if(nav.style.maxHeight !== "300px"){
+            nav.style.maxHeight = "300px";
+            menu.classList.add('expand');
+        }else {
+            nav.style.maxHeight = "0px";
+            menu.classList.remove('expand');
+        }
+    }
+    menu.onclick = function(){ expand(); }
+    nav.onclick = function(){ expand();}
+</script>
+</html>
