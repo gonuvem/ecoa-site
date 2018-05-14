@@ -69,7 +69,6 @@ function startAnim(elem){
 
 for(var i = 0; i < navItems.length; i++){
     navItems[i].onclick = function(e){
-        e.preventDefault();
         startAnim(this.hash.slice(1, this.hash.length));
     };
 }

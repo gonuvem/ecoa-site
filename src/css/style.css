@@ -44,6 +44,66 @@ header{
   line-height: 120%;
 }
 
+.button {
+  /* display: flex;
+  overflow: hidden; */
+
+  margin: 10px;
+  padding: 12px 52px;
+
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+  text-transform: none;
+  text-transform: capitalize;
+
+  color: #fff;
+  border: 4;
+  border-width: 0.05em;
+  border-radius: 8px;
+
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+ 
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 5px 10px var(--color-smoke);
+
+  
+}
+
+.button:hover {
+  transition: all 150ms linear;
+
+  opacity: .85;
+}
+
+.button:active {
+  transition: all 150ms linear;
+  opacity: .75;
+}
+
+.button:focus {
+  outline: 1px dotted #959595;
+  outline-offset: -4px;
+}
+
+.button.-regular {
+  color: #fff;
+  background-color: #4654ba;
+  border-color: #fff
+  
+}
+
+
+
 .txt-ecoa{
   display: table-cell;
   vertical-align: middle;
@@ -232,7 +292,7 @@ nav{
 }
 
 #palestrantes .people_container{
-  max-height: 500px;
+  max-height: 350px;
   width: 30%;
   float: left;
   background-color: transparent;
@@ -246,7 +306,6 @@ nav{
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0px 0px 2px 2px #aaa;
 }
 
 #palestrantes .people_photo img{
@@ -274,6 +333,8 @@ nav{
 #palestrantes .people_desc{
   width: 80%;
   margin: auto;
+  text-align: center;
+  font-weight: bold;
 }
 
 #palestrantes::after{
@@ -388,7 +449,6 @@ nav{
 #patrocinadores .sup img{
   width: 100%;
   /*! height: 100%; */
-  box-shadow: 0px 0px 2px 2px #aaa;
   border-radius: 50%;
 }
 
@@ -437,8 +497,6 @@ nav{
   padding-top: 50px;
 }
 
-
-
 #apoiadores .sup{
   width: 100%;
   /*! padding-bottom: 100%; */
@@ -451,12 +509,12 @@ nav{
 
 #apoiadores .sup img{
   width: 100%;
-  box-shadow: 0px 0px 2px 2px #aaa;
   border-radius: 50%;
 }
 
 #apoiadores .desc, #patrocinadores .desc{
   margin-top: 4%;
+  margin-bottom: 10%;
   text-align: center;
   font-family: Monda;
   color: #0e1e3e;
