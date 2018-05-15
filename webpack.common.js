@@ -2,6 +2,7 @@ const path = require('path');
 const clean = require('clean-webpack-plugin');
 const env = process.env.NODE_ENV;
 const extract = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry:{
@@ -64,6 +65,8 @@ module.exports = {
         }
     },
     plugins:[
-     //   new  clean(['dist'])
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        })
     ]
 }
