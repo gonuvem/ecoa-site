@@ -31,7 +31,7 @@ header{
 #ecoa{
   display: table;
   font-family: Monda;
-  font-size: 4em;
+  font-size: 3.4em;
   top: 0%;
   width: 80%;
   left: 10%;
@@ -102,7 +102,33 @@ header{
   
 }
 
+#ecoa .button-container{
+  display: inline-block;
+  border: #348ee2 solid 3px;
+  width: 250px;
+  position: absolute;
+  margin-left: -125px;
+  bottom: 10px;
+}
+#ecoa .button-container:hover{
+  background-color: #1b72c3; /*#348ee2;*/
+  cursor: pointer;
+  
+}
 
+#ecoa .button-container a{
+  text-decoration: none;
+}
+#ecoa .button-container .register{
+  font-size: 0.5em;
+  color: white;
+}
+#ecoa .desc{
+  font-size: 0.5em;
+}
+#ecoa .middle{
+  padding: 80px 0px;
+}
 
 .txt-ecoa{
   display: table-cell;
@@ -185,7 +211,7 @@ nav{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(8, 11, 24, 0.22);
+  background-color: rgba(8, 11, 24, 0.5);
   width: 100%;
   height: 100%;
 }
@@ -347,7 +373,7 @@ nav{
 
 #programacao .title_container{
   background-image: url("../../assets/imgs/bg/programacao.png");
-  padding-bottom: 37.06%;
+  padding-bottom: 50%;
   margin-bottom: 0;
 }
 
@@ -463,7 +489,7 @@ nav{
   /*! background-color: #0e1e3e; */
   float: left;
   margin: auto 6.66%;
-  min-height: 250px;
+  min-height: 350px;
 }
 
 #apoiadores .title_container{
@@ -486,6 +512,7 @@ nav{
   float: left;
   margin: auto 6.66%;
   min-height: 250px;
+  padding-bottom: 20px;
 }
 
 #apoiadores::after{
@@ -519,6 +546,7 @@ nav{
   font-family: Monda;
   color: #0e1e3e;
   font-size: 1.3em;
+  max-height: 10px;
 }
 
 #contatos .title_container{
@@ -677,9 +705,104 @@ footer::after{
   }
 }
 
+@media screen and (min-width:0px) and (max-width: 1199px){
+  .title{
+    display: inline-block;
+    float: none;
+  }
+  
+  /*! EVENTO */
+  #evento .title_container{
+    position: relative;
+    padding-bottom: 30%;
+  }
+  
+  #evento .title_content{
+    position: relative;
+  }
+ 
+  #evento .title_content > div{
+    position: relative;
+  }
+  
+  #evento .desc {
+    padding-top: 2em;
+    float: none;
+    width: 100%;
+  }
+  
+  /*! PALESTRANTES */
+  #palestrantes .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #palestrantes .title_content{
+    position: relative;
+  }
+  
+  /*! Programacao*/
+  #programacao .title_container{
+    position: relative;
+    padding-bottom: 8%;
+  }  
+  
+  #programacao .title_content{
+    position: relative;
+    padding-top: 7%;
+    padding-bottom: 8%;
+  }
+  
+  #programacao .title{
+    position: relative;
+  }
+
+  /*! Apoiadores */
+  #patrocinadores .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #patrocinadores .container{
+    width: 90%;
+  }
+  #patrocinadores .title_content{
+    position: relative;
+    /*! top: 35%; */
+    padding-top: 6%;
+    padding-bottom: 13%;
+  }
+  
+  /*! Apoiadores */
+  #apoiadores .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #apoiadores .container{
+    width: 90%;
+  }
+  #apoiadores .title_content{
+    position: relative;
+    /*! top: 35%; */
+    padding-top: 5%;
+    padding-bottom: 13%;
+  }
+
+  
+  #contatos .title_container{
+    position: relative;
+    padding-bottom: 0;
+  }  
+  #contatos .title_container > div{
+    position: relative;
+    /*! padding-bottom: 0; */
+  } 
+
+  footer{
+    position: relative;
+  }
+}
 
 /*! -=-=-==-=-=-=  MENU =-=-=-=-=--=-==-=-=  */
-@media screen and (min-width:200px) and (max-width: 949px){
+@media screen and (min-width:200px) and (max-width:1040px){
   /*! MENU */
   .bgdark{
     background-color: rgba(7,9,26,0.9);
@@ -812,7 +935,10 @@ footer::after{
   #ecoa{
     font-size: 2em;
   }
-  
+  #ecoa .button-container{
+    width: 150px;
+    margin-left: -75px;
+  }
   .title{
     font-size: 2em;
   }
@@ -838,27 +964,36 @@ footer::after{
     padding-bottom: 40px;
   }
 
-    #patrocinadores .supporters{
+  #patrocinadores .supporters{
     width: 80%;
     /*! left: 10%; */
     position: relative;
     margin: 0px 10%;
     margin-bottom: 10%;
+    max-height: none;
+    min-height: 200px;
   }
   #patrocinadores .sup{
     width: 80%;
     /*! padding-bottom: 80%; */
     margin: auto;
   }
-  
+  #programacao .container{
+    padding-bottom: 80px;
+  }
+  #programacao .title_container .title_content{
+    padding-top: 25%;
+  }
+
   
   #apoiadores .supporters{
     width: 80%;
     /*! left: 10%; */
     position: relative;
     margin: 0px 10%;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
   }
+
   #apoiadores .sup{
     width: 80%;
     /*! padding-bottom: 80%; */
@@ -892,7 +1027,10 @@ footer::after{
     font-size: 1.5em;
   }
   #ecoa{
-    font-size: 3.5em;
+    font-size: 2.5em;
+  }
+  #ecoa .middle{
+    padding: 40px 0px;
   }
   
   
@@ -920,13 +1058,16 @@ footer::after{
     position: relative;
     margin: 0 5%;
     margin-bottom: 10%;
+    min-height: 250px;
   }
   #apoiadores .sup,#patrocinadores .sup{
     width: 80%;
     /*! padding-bottom: 80%; */
     margin: auto;
   }
-  
+  #programacao .title_content{
+    padding-top: 15%;
+  }
   footer #title{
     font-size: 0.5em;
     line-height: 50px;
@@ -952,7 +1093,7 @@ footer::after{
     font-size: 2em;
   }
   #ecoa{
-    font-size: 4em;
+    font-size: 3.2em;
   }
   
   
@@ -977,6 +1118,10 @@ footer::after{
     padding-top: 6%;
     padding-bottom: 6%;
   }
+
+  #patrocinadores .supporters{
+    min-height: 300px;
+  }
   
   
   footer #title{
@@ -996,99 +1141,5 @@ footer::after{
   
 }
 
-@media screen and (min-width:0px) and (max-width: 1199px){
-  .title{
-    display: inline-block;
-    float: none;
-  }
-  
-  /*! EVENTO */
-  #evento .title_container{
-    position: relative;
-    padding-bottom: 30%;
-  }
-  
-  #evento .title_content{
-    position: relative;
-  }
- 
-  #evento .title_content > div{
-    position: relative;
-  }
-  
-  #evento .desc {
-    padding-top: 2em;
-    float: none;
-    width: 100%;
-  }
-  
-  /*! PALESTRANTES */
-  #palestrantes .title_container{
-    position: relative;
-    padding-bottom: 0;
-  }  
-  #palestrantes .title_content{
-    position: relative;
-  }
-  
-  /*! Programacao*/
-  #programacao .title_container{
-    position: relative;
-    padding-bottom: 8%;
-  }  
-  
-  #programacao .title_content{
-    position: relative;
-    padding-top: 13%;
-    padding-bottom: 8%;
-  }
-  
-  #programacao .title{
-    position: relative;
-  }
 
-  /*! Apoiadores */
-  #patrocinadores .title_container{
-    position: relative;
-    padding-bottom: 0;
-  }  
-  #patrocinadores .container{
-    width: 90%;
-  }
-  #patrocinadores .title_content{
-    position: relative;
-    /*! top: 35%; */
-    padding-top: 6%;
-    padding-bottom: 13%;
-  }
-  
-  /*! Apoiadores */
-  #apoiadores .title_container{
-    position: relative;
-    padding-bottom: 0;
-  }  
-  #apoiadores .container{
-    width: 90%;
-  }
-  #apoiadores .title_content{
-    position: relative;
-    /*! top: 35%; */
-    padding-top: 5%;
-    padding-bottom: 13%;
-  }
-
-  
-  #contatos .title_container{
-    position: relative;
-    padding-bottom: 0;
-  }  
-  #contatos .title_container > div{
-    position: relative;
-    /*! padding-bottom: 0; */
-  } 
-
-  footer{
-    position: relative;
-  }
-}
 

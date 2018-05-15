@@ -1,26 +1,26 @@
 { "list" : [
     {
-        "img": "./dist/assets/imgs/palestrantes/p1.png",
+        "img": "./assets/imgs/palestrantes/p1.png",
         "name": "Paula Grangeiro",
         "desc": "Vida Freela: Como decolar com a sua carreira de dev"
     },
     { 
-        "img": "./dist/assets/imgs/palestrantes/p2.png",
+        "img": "./assets/imgs/palestrantes/p2.png",
         "name": "Ruhan Bello",
         "desc": "Profissão: Desenvolvedor de jogos"
     },
     { 
-        "img": "./dist/assets/imgs/palestrantes/p3.png",
+        "img": "./assets/imgs/palestrantes/p3.png",
         "name": "Ricardo Britto",
         "desc": "Aperfeiçoando Desenvolvimento de Software com Software Analytics"
     },
     { 
-        "img": "./dist/assets/imgs/palestrantes/p4.png",
+        "img": "./assets/imgs/palestrantes/p4.png",
         "name": "Hugo Pizaia e Thiago Bisewski",
         "desc": "Pixelwolf: Metodologias, Cultura e Inovação"
     },
     { 
-        "img": "./dist/assets/imgs/palestrantes/p5.png",
+        "img": "./assets/imgs/palestrantes/p5.png",
         "name": "Daybson Bruno",
         "desc": "Got Root? Overview sobre Área de Pentesting"
     }

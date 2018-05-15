@@ -47,8 +47,8 @@ var menu = document.getElementById("menu-square");
 var nav = document.getElementsByTagName("nav")[0];
 function expand(){
     console.log(nav.style.maxHeight)
-    if(nav.style.maxHeight !== "200px"){
-        nav.style.maxHeight = "200px";
+    if(nav.style.maxHeight !== "300px"){
+        nav.style.maxHeight = "300px";
         menu.classList.add('expand');
     }else {
         nav.style.maxHeight = "0px";
