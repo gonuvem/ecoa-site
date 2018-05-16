@@ -1,17 +1,17 @@
 { "list" : [
     {
-        "img": "./dist/assets/imgs/apoiadores/apo1.png",
+        "img": "./assets/imgs/apoiadores/apo1.png",
         "desc": "FACTOS"
     },{
-        "img": "./dist/assets/imgs/apoiadores/apo2.png",
+        "img": "./assets/imgs/apoiadores/apo2.png",
         "desc": "UFPI"
     },
     {
-        "img": "./dist/assets/imgs/apoiadores/apo3.png",
+        "img": "./assets/imgs/apoiadores/apo3.png",
         "desc": "Ericsson"
     },
     {
-        "img": "./dist/assets/imgs/apoiadores/apo4.png",
+        "img": "./assets/imgs/apoiadores/apo4.png",
         "desc": "Pixelwolf"
     }
 ]

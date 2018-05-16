@@ -1,22 +1,22 @@
 { "list": [
     {
-        "img": "./dist/assets/imgs/patrocinadores/pat1.png",
+        "img": "./assets/imgs/patrocinadores/pat1.png",
         "desc": "GoNuvem"
     },
     {
-        "img": "./dist/assets/imgs/patrocinadores/pat2.png",
+        "img": "./assets/imgs/patrocinadores/pat2.png",
         "desc": "Approach Tecnologia"
     },
     {
-        "img": "./dist/assets/imgs/patrocinadores/pat3.png",
+        "img": "./assets/imgs/patrocinadores/pat3.png",
         "desc": "Teresina Coworking"
     },
     {
-        "img": "./dist/assets/imgs/patrocinadores/pat4.png",
+        "img": "./assets/imgs/patrocinadores/pat4.png",
         "desc": "Fatepi"
     },
     {
-        "img": "./dist/assets/imgs/patrocinadores/pat5.png",
+        "img": "./assets/imgs/patrocinadores/pat5.png",
         "desc": "Infoway"
     }
 ]
