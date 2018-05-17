@@ -77,17 +77,17 @@ var bgdark = false;
 window.addEventListener('scroll', function(){
         
         var mn = document.getElementById("menu-content");
-        /*
+        
         var offh = document.getElementById("intro").offsetHeight;
-        if(offh/2 < window.scrollY && !bgdark){
+        if(0 < window.scrollY && !bgdark){
             bgdark = true;
             mn.classList.add('bgdark');
         }
-        if(offh > window.scrollY){
+        if(65 > window.scrollY){
             bgdark = false;
             mn.classList.remove('bgdark');
         }
-        */
+        
 
         // -=-=-=- Interative MArker section -=-=-=-=-=
         var len = sectionItems.length;
