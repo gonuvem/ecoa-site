@@ -11,9 +11,6 @@ for(var i = 0; i < navItems.length; i++){
     mapSectionNav.set(href, navItems[i]);
 }
 
-for(var i = 1; i < sectionItems.length; i++){
-    sectionItems[i].classList.add('sumir');
-}
 
 // ################## ANIMATIONFRAME ######################
 window.animationFrame = (function () {
@@ -105,9 +102,6 @@ window.addEventListener('scroll', function(){
                 canAttrib = !canAttrib;
                 //break;
             }
-            if(i > 0 && winScroll + window.innerHeight - off >= 114){
-                revealSection(sectionItems[i].id);
-            }
         }
     }, true);
 
@@ -121,11 +115,22 @@ function selectedNavItem(elem){
     if(elem) elem.classList.add('selectedNavItem');
 }
 
-function revealSection(elemName){
+import ScrollReveal from 'scrollreveal'
 
-    var section = document.querySelector('#'+elemName);
-    if(!section.classList.contains('opa')){
-        section.classList.add('opa');
-    }
-    section.classList.remove('sumir');
-}
+window.sr = ScrollReveal({
+    useDelay: 'always',
+    viewFactor: 0.3,
+    scale: 0.8,
+});
+
+if (sr.isSupported()) {
+    document.documentElement.classList.add('sr');
+  }
+
+sr.reveal('nav');
+sr.reveal('.txt-ecoa', {container: '#ecoa', rotate: {x: 45}, duration: 2000}, 100);
+sr.reveal('.desc', {duration: 1000});
+sr.reveal('.title', {duration: 2000});
+sr.reveal('.supporters', {duration: 1500});
+sr.reveal('.people_container', {duration: 1500});
+sr.reveal('table', {duration: 1000});

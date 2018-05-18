@@ -11,7 +11,7 @@ module.exports = {
         zero: './src/js/zero.js',
     },
     output: {
-        filename: '[name].zero.js',
+        filename: './js/[name].zero.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {

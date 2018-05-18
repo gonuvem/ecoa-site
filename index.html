@@ -35,7 +35,9 @@
     <meta name="twitter:title" content="ECOA">
     <meta name="twitter:description" content="Encontro de Computação Aplicada">
     <meta name="twitter:image" content="assets/img/ecoa.png">
-
+    <style>
+        .txt-ecoa{ visibility: hidden; }
+    </style>
 </head>
 
 <body>
@@ -71,10 +73,10 @@
         <div class="modal"></div>
         <div id="ecoa">
             <div class="txt-ecoa">
-                <div class="desc date"> 30 de Maio de 2018</div>
-                <div class="middle"> Encontro de Computação Aplicada </div>
-                <div class="desc place"> Auditório do CTT - UFPI </div>
-                <div class="button-container">
+                <div class="desc date el-txt-ecoa"> 30 de Maio de 2018</div>
+                <div class="middle el-txt-ecoa"> Encontro de Computação Aplicada </div>
+                <div class="desc place el-txt-ecoa"> Auditório do CTT - UFPI </div>
+                <div class="button-container el-txt-ecoa">
                     <a href="https://goo.gl/forms/NftANsBZXvQWX0is1" target="blank">
                         <div class="register"> Inscreva-se !</div>
                     </a>
@@ -105,7 +107,7 @@
         </div>
 
         <div class="container">
-            <div class="content" id="palestrantes_container">
+            <div class="content flex-container" id="palestrantes_container">
                 <div class="people_container" v-for="people in palestrantes">
                         <div class="center">
                             <div class="people_photo"><img v-bind:src="people.img" /></div>
@@ -185,7 +187,7 @@
             </div>
         
         <div class="container">
-                <div class="content" id="patrocinadores_container">
+                <div class="content  flex-container" id="patrocinadores_container">
                     
                     <div class="supporters" v-for="sponsor in patrocinadores">
                         <div class="sup"><img v-bind:src="sponsor.img"></div>
@@ -205,7 +207,7 @@
             </div>
         
         <div class="container">
-                <div class="content" id="apoiadores_container">
+                <div class="content  flex-container" id="apoiadores_container">
                     <div class="supporters" v-for="supporter in apoiadores">
                         <div class="sup"><img v-bind:src="supporter.img"></div>
                         <div class="desc">
@@ -262,11 +264,7 @@
 </div>
 </body>
 <!--
-<script src="dist/navigation.zero.js"></script>
-<script src="dist/canvas.zero.js"></script>
-<script src="dist/zero.zero.js"></script> -->
-<!--<script src-"assets/vue.min.js"></script>-->
-<script>
-    
-</script>
+    USING SCROLLREVEAL JS BY Julian Lloyd
+    https://github.com/jlmakes/scrollreveal
+-->
 </html>
