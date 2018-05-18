@@ -31,5 +31,8 @@
     "webpack-cli": "^2.0.12",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "scrollreveal": "^3.4.0"
   }
 }

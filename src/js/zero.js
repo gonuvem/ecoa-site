@@ -4,7 +4,6 @@ import patrocinadores from '../../assets/data/patrocinadores.json'
 import apoiadores from '../../assets/data/apoiadores.json'
 import Vue from 'vue'
 
-
 function importAll(rq){
     return rq.keys().map(rq);
 }
